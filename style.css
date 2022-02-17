@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #6c757d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+h2 {
+    padding: 2em;
+}
+
+input.novaTarefa {
+    padding: .7em;
+    border-radius: .3em;
+    border: 1px solid var(--secondary-color);
+
+    width: 30em;
+}
+
+button.addTarefa {
+    background-color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+    color: white;
+    padding: .7em;
+    border-radius: .3em;
+    font-weight: bold;
+    width: 3em;
+}
+
+button:hover, input[type='button']:hover, input[type='checkbox'] {
+    cursor: pointer;
+}
+
+/*Botão de adicionar tarefas*/
+button:hover {
+    background: #0054ad;
+    transition: .3s;
+}
+
+/*Botão de excluir tarefa*/
+input[type='button']:hover {
+    background: #2990ff;
+    color: white !important;
+    transition: .2s;
+}
+
+.listaDeTarefas {
+    margin-top: 2em;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo_item {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    align-items: center;
+
+    width: 26.1em;
+    background-color: white;
+    padding: .4em;
+    border: 1px solid var(--secondary-color);
+    border-radius: .3em;
+}
+
+.todo_item:hover {
+    border: 1px solid #2990ff;
+    color: #2990ff;
+}
+
+.todo_item:hover input[type='button'] {
+    color: #2990ff;
+}
+
+.todo_item div {
+    background: white;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: -15px;
+}
+
+.todo_item > input[type='checkbox']:checked  + div {
+    text-decoration:line-through;
+}
+
+input[type='button'] {
+    background: white;
+    border: none;
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: .3em;
+    margin-left: 20px;
+    margin-bottom: 1px;
+}
