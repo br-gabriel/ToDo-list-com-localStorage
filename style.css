@@ -31,22 +31,25 @@ h2 {
     padding: 2em;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: red;
+}
+
 .newTaskArea {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 11px;
-
-    width: 50vw;
 }
 
 input.novaTarefa {
     padding: .7em;
     border-radius: .3em;
     border: 1px solid var(--secondary-color);
-
-    width: 100%;
-    max-width: 29.5em;
 }
 
 button.addTarefa {
@@ -80,7 +83,6 @@ input[type='button']:hover {
 
 .listaDeTarefas {
     margin-top: 2em;
-    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,9 +134,7 @@ input[type='button'] {
 }
 
 @media (max-width: 525px) {
-    .newTaskArea {
-        margin-left: 1rem;
-    
-        width: 50vw;
+    .novaTarefa{
+        min-width: 368px;
     }
 }
