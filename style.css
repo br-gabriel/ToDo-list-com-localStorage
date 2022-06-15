@@ -36,7 +36,7 @@ main {
     flex-direction: column;
     justify-content: center;
 
-    background-color: red;
+    min-width: 320px;
 }
 
 .newTaskArea {
@@ -135,6 +135,6 @@ input[type='button'] {
 
 @media (max-width: 525px) {
     .novaTarefa{
-        min-width: 368px;
+        min-width: 320px;
     }
 }
