@@ -130,3 +130,11 @@ input[type='button'] {
     margin-left: 20px;
     margin-bottom: 1px;
 }
+
+@media (max-width: 525px) {
+    .newTaskArea {
+        margin-left: 1rem;
+    
+        width: 50vw;
+    }
+}
