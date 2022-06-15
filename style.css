@@ -135,7 +135,7 @@ input[type='button'] {
 }
 
 @media (max-width: 525px) {
-    .novaTarefa{
+    .newTaskArea{
         min-width: 320px;
     }
 }
