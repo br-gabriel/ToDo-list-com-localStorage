@@ -41,7 +41,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 0px;
+    gap: 10px;
 }
 
 input.novaTarefa {
@@ -49,8 +49,7 @@ input.novaTarefa {
     border-radius: .3em;
     border: 1px solid var(--secondary-color);
 
-    width: 100%;
-    max-width: 30em;
+    width: 30em;
 }
 
 button.addTarefa {
@@ -61,8 +60,7 @@ button.addTarefa {
     border-radius: .3em;
     font-weight: bold;
     
-    width: 100%;
-    max-width: 40px;
+    width: 40px;
 }
 
 button:hover, input[type='button']:hover, input[type='checkbox'] {
@@ -96,8 +94,7 @@ input[type='button']:hover {
     grid-template-columns: 1fr 10fr 1fr;
     align-items: center;
 
-    width: 100%;
-    max-width: 26.1em;
+    width: 26.1em;
     background-color: white;
     padding: .4em;
     border: 1px solid var(--secondary-color);
