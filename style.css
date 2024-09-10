@@ -94,11 +94,13 @@ input[type='button']:hover {
 
 .listaDeTarefas {
     margin-top: 2em;
+    margin-bottom: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    background-color: red;
 }
 
 .todo_item {
