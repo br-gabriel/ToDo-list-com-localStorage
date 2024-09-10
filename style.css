@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: black;
 
     display: flex;
     flex-direction: column;
@@ -25,16 +25,21 @@ body {
 
     text-align: center;
     font-size: 1.7rem;
+
+    width: 100%;
 }
 
 h2 {
     padding: 2em;
+    color: white;
 }
 
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 95%;
+    max-width: 450px;
 }
 
 .newTaskArea {
@@ -50,6 +55,8 @@ input.novaTarefa {
     border: 1px solid var(--secondary-color);
 
     width: 30em;
+    background-color: black;
+    color: white;
 }
 
 button.addTarefa {
@@ -61,6 +68,10 @@ button.addTarefa {
     font-weight: bold;
     
     width: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button:hover, input[type='button']:hover, input[type='checkbox'] {
@@ -70,12 +81,13 @@ button:hover, input[type='button']:hover, input[type='checkbox'] {
 /*Botão de adicionar tarefas*/
 button:hover {
     background: #0054ad;
+    border-color: #0054ad;
     transition: .3s;
 }
 
 /*Botão de excluir tarefa*/
 input[type='button']:hover {
-    background: #2990ff;
+    background: var(--primary-color);
     color: white !important;
     transition: .2s;
 }
@@ -94,8 +106,8 @@ input[type='button']:hover {
     grid-template-columns: 1fr 10fr 1fr;
     align-items: center;
 
-    width: 26.1em;
-    background-color: white;
+    width: 100%;
+    background-color: black;
     padding: .4em;
     border: 1px solid var(--secondary-color);
     border-radius: .3em;
@@ -111,18 +123,18 @@ input[type='button']:hover {
 }
 
 .todo_item div {
-    background: white;
+    color: white;
     font-size: 1.5rem;
     text-align: left;
-    margin-left: -15px;
 }
 
 .todo_item > input[type='checkbox']:checked  + div {
-    text-decoration:line-through;
+    text-decoration: line-through;
 }
 
 input[type='button'] {
-    background: white;
+    background: black;
+    color: white;
     border: none;
     width: 1.1em;
     height: 1.1em;
